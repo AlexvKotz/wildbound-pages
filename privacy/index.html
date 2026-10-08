@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Privacy · Wildbound</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="../">Wildbound</a>
+      <nav aria-label="Site">
+        <a href="../privacy/">Privacy</a><a href="../support/">Support</a>
+      </nav>
+    </header>
+    <main id="main">
+      <h1>Wildbound invited-alpha privacy notice</h1>
+      <p>Effective date: <strong>October 8, 2026</strong>.</p>
+      <p>
+        Wildbound is an early wildlife exploration game operated by its founder.
+        This alpha is for individually invited adults aged
+        <strong>18 or older</strong>. For privacy, access or deletion requests,
+        contact
+        <a href="mailto:wildboundexplore@gmail.com"
+          >wildboundexplore@gmail.com</a
+        >.
+      </p>
+      <h2>Your field journal stays on your device</h2>
+      <p>
+        Your saved photos, observations, notes, Wildbook, quests and Sanctuary
+        progress are stored on your iPhone. This alpha has no Wildbound cloud
+        account or gameplay synchronization. Wildbound cannot remotely retrieve
+        or erase those local records. Device backups may contain app data
+        depending on your Apple settings; keep your own originals of important
+        photographs.
+      </p>
+      <p>
+        Ending identification access does not erase your local journal. It
+        remains usable while the app is installed and the build can run.
+        TestFlight builds have their own expiry, after which an updated build is
+        needed. Uninstalling can permanently lose local app data; do not use it
+        as a troubleshooting step without understanding that loss.
+      </p>
+      <h2>Sending a photo is your choice</h2>
+      <p>
+        Before external identification, Wildbound explains the processing and
+        asks you to choose whether to send. A resized JPEG copy with original
+        metadata removed passes through Wildbound&#x27;s Cloudflare service to
+        OpenAI for animal-identification suggestions. We do not include precise
+        GPS, field notes, original EXIF, camera serial numbers or unrelated
+        user/device identifiers in that provider request.
+      </p>
+      <p>
+        Cloudflare handles your connection and can process IP addresses and
+        other network/security information. OpenAI receives the image and
+        Wildbound&#x27;s identification instructions through the service.
+        Wildbound does not forward your invitation credential or device
+        connection headers to OpenAI. See
+        <a href="https://www.cloudflare.com/privacypolicy/"
+          >Cloudflare&#x27;s privacy policy</a
+        >.
+      </p>
+      <p>
+        Wildbound&#x27;s Worker processes the image for the request without
+        saving the raw image to its database or an image store. Application
+        logging of raw images is disabled. This does not mean infrastructure
+        providers retain no information.
+      </p>
+      <p>
+        Wildbound has disabled OpenAI&#x27;s optional sharing of API
+        inputs/outputs, evaluation/fine-tuning data and platform model feedback,
+        as checked on October 8, 2026. OpenAI says API content is not used to
+        train its models unless the account opts in. Default abuse-monitoring
+        retention is up to 30 days, with policy exceptions for longer retention.
+        Wildbound does <strong>not</strong> claim Zero Data Retention. See
+        <a href="https://developers.openai.com/api/docs/guides/your-data"
+          >OpenAI&#x27;s API data controls and retention information</a
+        >.
+      </p>
+      <p>
+        You can instead save an observation for review or choose a species you
+        recognize. AI may be wrong or unavailable. Catalog support, an AI
+        suggestion, a player&#x27;s choice and scientific verification are
+        different things. Camera capture alone does not prove that an animal was
+        physically present.
+      </p>
+      <h2>Access and minimal operational records</h2>
+      <p>
+        Individual invited access uses an opaque credential held in the
+        device&#x27;s secure storage. The service uses hashes and pseudonymous
+        tester references, access expiry and revocation status, request IDs,
+        timestamps, outcome codes, latency and token/cost records to enforce
+        access and spending limits. Pseudonymous does not mean anonymous: the
+        founder may connect a tester reference to private invitation
+        administration. These records do not contain the raw photo or field
+        notes.
+      </p>
+      <p>
+        Revoking access prevents new requests, but cannot recall a request
+        already in progress. It does not delete existing spending history or
+        restore used allowances.
+      </p>
+      <h2>What we keep, and for how long</h2>
+      <ul>
+        <li>
+          <strong>Local journal and photos:</strong> remain on your device until
+          removed with app data or otherwise lost. The alpha has no
+          individual-photo deletion or remote journal-erasure service. Apple
+          backups are separate.
+        </li>
+        <li>
+          <strong
+            >Invitation/contact details and the private testing log:</strong
+          >
+          used for invitations, adult-eligibility confirmation, support and the
+          agreed follow-up. Our practice: review them within 30 days after your
+          testing period; delete contact links and identifiable notes within 90
+          days after it ends, unless you separately agree to ongoing contact or
+          a specific unresolved request, security incident or legal duty
+          requires retention. Keep only de-identified product findings after
+          that. No birth dates or identity documents are requested for this
+          cohort.
+        </li>
+        <li>
+          <strong
+            >Support/privacy correspondence and founder-held diagnostic
+            copies:</strong
+          >
+          practice: remove or de-identify them within 90 days after the issue is
+          resolved. If retention is still needed for a specific dispute,
+          security issue or applicable obligation, retain only what is necessary
+          and review it when that issue ends.
+        </li>
+        <li>
+          <strong>Minimal access, reservation and usage records:</strong> the
+          current service keeps append-only history throughout this pilot&#x27;s
+          lifetime to prevent quota resets, enforce the shared spending ceiling
+          and reconcile costs. It has no automatic purge or individual deletion
+          mechanism for that history. At service retirement, assess what is
+          still needed for unresolved accounting/security or applicable legal
+          obligations; there is no promised deletion date. Do not read this
+          technical retention design as a claim that all such records are
+          legally exempt from deletion.
+        </li>
+        <li>
+          <strong>Provider-controlled records:</strong> OpenAI, Cloudflare,
+          Apple, GitHub and the email provider apply their own policies.
+          Wildbound cannot promise to erase their independently retained
+          security records or backups.
+        </li>
+      </ul>
+      <h2>Access, correction or deletion requests</h2>
+      <p>
+        Email
+        <a href="mailto:wildboundexplore@gmail.com"
+          >wildboundexplore@gmail.com</a
+        >, preferably from your invitation/contact address, and describe the
+        request. We will use the minimum information needed to connect it to
+        your records. Do not send passwords, invitation codes, API keys,
+        government ID, private photos or precise wildlife locations.
+      </p>
+      <p>
+        The founder can review records held by Wildbound, provide an appropriate
+        copy of those records, correct contact information, remove nonessential
+        founder-held contact/feedback records and stop identification access.
+        There is no self-service export or deletion portal. We will explain what
+        can be removed, what remains and why, and address applicable privacy
+        rights. Local-only data cannot be fetched or remotely deleted by the
+        founder. A request to stop testing is not automatically a deletion
+        request; uninstalling does not delete service or provider records.
+      </p>
+      <p>
+        If a request requires changes to the protected accounting system or
+        action by a provider, it needs individual review. We will not promise
+        deletion that has not been performed. Provider privacy links below
+        explain their own request channels.
+      </p>
+      <h2>Apple TestFlight, support email and this website</h2>
+      <p>
+        Apple automatically collects TestFlight usage and crash information and
+        shares it with the app developer; this can include contact, device and
+        installation details. This collection cannot be opted out of while using
+        TestFlight. Feedback you choose to send is additional. Apple says it
+        retains beta feedback for one year and may keep crash/usage data until
+        bugs are resolved. See
+        <a href="https://www.apple.com/legal/privacy/data/en/test-flight/"
+          >TestFlight &amp; Privacy</a
+        >. We use these records for alpha support and improvement, not
+        advertising, and do not share Apple&#x27;s tester reports with third
+        parties.
+      </p>
+      <p>
+        Messages sent to our support address are processed through Gmail. See
+        <a href="https://policies.google.com/privacy"
+          >Google&#x27;s privacy policy</a
+        >.
+      </p>
+      <p>
+        This privacy/support site uses GitHub Pages. We add no analytics,
+        tracking scripts, forms or advertising cookies. GitHub logs visitor IP
+        addresses for security; see
+        <a
+          href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection"
+          >GitHub Pages data collection</a
+        >
+        and
+        <a
+          href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          >GitHub&#x27;s privacy statement</a
+        >. Hosting a static page is not a promise of anonymous browsing.
+      </p>
+      <p>
+        Providers may process information in other countries under their
+        policies. The founder&#x27;s contact-record removal does not override
+        their retention.
+      </p>
+      <h2>Respect people and wildlife</h2>
+      <p>
+        Use photographs you own or have permission to process. Wildbound is for
+        animal observation, not identifying people. Avoid submitting
+        identifiable photographs of people without their appropriate permission;
+        do not include sensitive personal information.
+      </p>
+      <p>
+        Observe wildlife at a respectful distance. Do not feed, touch, corner or
+        disturb animals, approach nests or dens, trespass or take unsafe
+        photographs. Do not disclose sensitive wildlife locations.
+      </p>
+      <h2>No advertising or behavioral tracking</h2>
+      <p>
+        This alpha has no advertising, monetization, social-sharing service,
+        in-app feedback backend or analytics SDK. Wildbound does not sell your
+        private observations or precise user/wildlife locations. Apple&#x27;s
+        beta diagnostics and the service&#x27;s minimal operational records
+        described above still apply.
+      </p>
+      <p>
+        We will update this notice and the relevant disclosure before materially
+        changing the described processing.
+      </p>
+    </main>
+    <footer>
+      Wildbound · Invited adult alpha preparation<br />
+      <a href="mailto:wildboundexplore@gmail.com">wildboundexplore@gmail.com</a>
+    </footer>
+  </body>
+</html>
